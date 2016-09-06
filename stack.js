@@ -11,15 +11,24 @@ while(playDecision){
     var userSelection = validate();
     //executes the corresponding command based on what they inputted
     if(userSelection === 1){
+        console.log(arr.length);
         arr.push
+        console.log(arr.length);
     }else if(userSelection === 2){
+         cconsole.log(arr.length);
         console.log("current last value in stack " + arr[arr.length-1]);
+        console.log(arr.length);
     }else{
         if(isNaN(arr[arr.length-1])){
+            console.log(arr.length);
             console.log('No value to pop! Try adding a value first!');
+            console.log(arr.length);
         }else{
+            console.log(arr.length);
             console.log("removing " + arr[arr.length-1]);
+            console.log(arr.length);
             arr.pop();
+            console.log(arr.length);
         }
     }
     //Determines if the user wants to continue playing.
@@ -28,9 +37,9 @@ while(playDecision){
 //logic for playing
 function getPlayDecision(){
     while(true){
-        var userValue = prompt('Continue?');
+        var userValue = prompt('Continue?: ');
         
-        if(!isNaN(userValue) && userValue.toUpperCase==='YES' && userValue.toUpperCase === 'NO'){
+        if(!isNaN(userValue) && userValue.toUpperCase()==='YES' && userValue.toUpperCase() === 'NO'){
             break;
         }
         console.log('Please enter a valid value (YES or NO)');
@@ -47,7 +56,7 @@ function validate(){
 
     while(true){
     
-        var userValue = prompt('Add (1) , View(2), Remove (3)');
+        var userValue = prompt('Add (1) , View(2), Remove (3):');
         
         if(!isNaN(userValue) && userValue>=1 && userValue <=3){
             break;
